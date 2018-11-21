@@ -22,13 +22,12 @@
 .img-circle {
   padding: 0px;
   margin: 0px;
-  border-radius: 50%;
   box-shadow: 0 0 16px 3px #d5d9f6;
 }
 .img-arrow {
-  height: 50%;
+  height: 25%;
   width : 10%;
-  box-shadow: 0 0 5px rgb(199, 236, 236);
+  box-shadow: 0 0 5px rgb(255, 255, 255);
 }
 #btn-previous {
   border-top-right-radius: 10px;
@@ -39,14 +38,14 @@
   border-bottom-left-radius: 10px;
 }
 .img-arrow:hover {
-  background-color: rgba(52, 197, 216, 0.7);
+  background-color: rgb(145, 24, 24);
 }
 .img-arrow:active {
   background-color: rgba(150, 186, 226, 0.6);
 }
 .carousel-container {
   border-radius: 20px;
-  background: white;
+  background: rgb(90, 89, 89);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
