@@ -23,7 +23,6 @@
   padding: 0px;
   margin: 0px;
   border-radius: 50%;
-  background-image: radial-gradient(rgba(199, 105, 28, 0.8), rgba(23, 197, 145, 0.7), rgba(34, 167, 219, 0.6));
   box-shadow: 0 0 16px 3px #d5d9f6;
 }
 .img-arrow {
@@ -47,7 +46,7 @@
 }
 .carousel-container {
   border-radius: 20px;
-  background-image: asset-url('background-carousel-3');
+  background: white;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -78,6 +77,6 @@
 }
 .mini-active {
   height: 40px;
-  background-color: rgba(97, 211, 52, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0 0 5px 3px black;
 }

@@ -51,7 +51,7 @@
 
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav .navbar-link:hover, #mdl-btn:hover {
-    background-color: rgb(40, 158, 212);
+    background-color: rgb(145, 24, 24);
     color: white;
     border-radius: 10px;
 }
@@ -124,7 +124,7 @@
 
 /* Change color of dropdown links on hover */
 .dropdown-content li:hover {
-  background-color: rgb(87, 233, 148);
+  background-color: rgb(145, 24, 24);
   box-shadow: 0px 8px 16px 0px rgba(3, 53, 23, 0.2);
 }
 
@@ -133,14 +133,14 @@
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  box-shadow: 0px 0px 16px 1px  rgb(87, 233, 148);
+  box-shadow: 0px 0px 16px 1px  rgb(145, 24, 24);
 }
 .dropdown-content button, .btn-logout{
   width: 100%;
   padding: 8px 16px;
   border: none;
   background: transparent;
-  color: rgb(38, 197, 105);
+  color: rgb(145, 24, 24);
   font-weight: bold;
   text-shadow: 1px 1px 1px black;
   height: 50px;
