@@ -1,25 +1,32 @@
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <img src="images/img1.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="images/img2.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="images/img3.jpg" style="width:100%">
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
+<div class="carousel-wrapper">
+  <div class="carousel-container">
+    <div class="slider-wrapper">
+      <%= image_tag 'previous.png', id: 'btn-previous', class:"img-arrow" %>
+        <ul class="slider">
+          <% @tasks.each do |task|  %>
+          <li>
+            <div class="car-img">
+              <% unless task.image.nil? %>
+                <%= image_tag task.image, class: "img-circle" %>
+              <% end %>
+            </div>
+          </li>
+          <% end %>
+        </ul>
+        <%= image_tag 'next.png', id: 'btn-next', class: "img-arrow" %>
+    </div>
+    <div class="miniatures">
+      <ul class="ul-mini">
+        <% i = 0 %>
+        <% @tasks.each do |task|  %>
+        <li>
+            <% unless task.image.nil? %>
+              <%= image_tag task.image, class: "mini-circle", id: i.to_s %>
+            <% end %>
+        </li>
+        <% i += 1%>
+        <% end %>
+      </ul>
+    </div>
+  </div>
 </div>
