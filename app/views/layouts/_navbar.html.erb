@@ -1,0 +1,47 @@
+<nav class="topnav" id="myTopnav">
+  <%= link_to "Home", root_path, class: "navbar-main" %>
+  <div>
+    <ul class="navbar-list">
+      <% unless user_signed_in? %>
+      <li class="navbar-item">
+        <p id="mdl-btn" class="modal-btn">Modal Log</p>
+      </li>
+      <li class="navbar-item">
+        <%= link_to "Log in", new_user_session_path, class: "navbar-link" %>
+      </li>
+      <li class="nnavbarav-item">
+        <%= link_to "Sign up", new_user_registration_path, class: "navbar-link" %>
+      </li>
+      <% else %>
+      <li class="navbar-item">
+        <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "navbar-link" %>
+      </li>
+      <% end %>
+      <li class="navbar-item">
+        <%= link_to "New task", new_task_path, class: "navbar-link" %>
+      </li>
+    </ul>
+  </div>
+  <div class="dropdown">
+    <img class="dropbtn rounded-circle" height="50px" width="50px" src="https://static-cdn.jtvnw.net/jtv_user_pictures/ravenbdo-profile_image-0b483724b0281255-300x300.png">
+    <div class="dropdown-content">
+      <% unless user_signed_in? %>
+      <li class="nav-item">
+        <button class="modal-btn">Log in</button>
+        <!-- <%= link_to "Log in", new_user_session_path, class: "nav-link"%>-->
+      </li>
+      <li class="nav-item">
+        <button class="modal-btn">Sign up</button>
+        <!-- <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>-->
+      </li>
+      <% else %>
+      <li class="nav-item">
+        <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "btn-logout" %>
+      </li>
+      <% end %>
+    </div>
+  </div>
+  <a href="javascript:void(0);" class="icon" id="icon">&#9776;</a>
+</nav>
+
+

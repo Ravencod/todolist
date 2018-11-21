@@ -1,0 +1,83 @@
+.slider {
+  margin: 0px 0;
+  width: 580px; /* Update to your slider width */
+  height: 300px; /* Update to your slider height */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.slider li, .miniatures li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.img-circle {
+  padding: 0px;
+  margin: 0px;
+  border-radius: 50%;
+  background-image: radial-gradient(rgba(199, 105, 28, 0.8), rgba(23, 197, 145, 0.7), rgba(34, 167, 219, 0.6));
+  box-shadow: 0 0 16px 3px #d5d9f6;
+}
+.img-arrow {
+  height: 50%;
+  width : 10%;
+  box-shadow: 0 0 5px rgb(199, 236, 236);
+}
+#btn-previous {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#btn-next {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.img-arrow:hover {
+  background-color: rgba(52, 197, 216, 0.7);
+}
+.img-arrow:active {
+  background-color: rgba(150, 186, 226, 0.6);
+}
+.carousel-container {
+  border-radius: 20px;
+  background-image: asset-url('background-carousel-3');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.slider-wrapper {
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.miniatures  {
+  height: 25%;
+}
+.ul-mini {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 40px;
+  margin: 3px 0px;
+}
+.mini-circle {
+  height: 30px;
+  border-radius: 40%;
+}
+.mini-circle:hover {
+  height: 40px;
+  background-color: rgba(230,255,255,0.6)
+}
+.mini-active {
+  height: 40px;
+  background-color: rgba(97, 211, 52, 0.6);
+  box-shadow: 0 0 5px 3px black;
+}

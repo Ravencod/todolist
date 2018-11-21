@@ -1,0 +1,32 @@
+<div class="carousel-wrapper">
+  <div class="carousel-container">
+    <div class="slider-wrapper">
+      <%= image_tag 'previous.png', id: 'btn-previous', class:"img-arrow" %>
+        <ul class="slider">
+          <% @tasks.each do |task|  %>
+          <li>
+            <div class="car-img">
+              <% unless task.image.nil? %>
+                <%= image_tag task.image, class: "img-circle" %>
+              <% end %>
+            </div>
+          </li>
+          <% end %>
+        </ul>
+        <%= image_tag 'next.png', id: 'btn-next', class: "img-arrow" %>
+    </div>
+    <div class="miniatures">
+      <ul class="ul-mini">
+        <% i = 0 %>
+        <% @tasks.each do |task|  %>
+        <li>
+            <% unless task.image.nil? %>
+              <%= image_tag task.image, class: "mini-circle", id: i.to_s %>
+            <% end %>
+        </li>
+        <% i += 1%>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

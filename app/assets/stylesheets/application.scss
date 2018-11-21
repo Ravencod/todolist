@@ -1,0 +1,10 @@
+@import "variables/personal_variables";
+@import "variables/bootstrap_variables";
+
+@import "bootstrap";
+@import "font-awesome";
+@import "components/*";
+
+body{
+  background-color:rgba(112, 111, 104, 0.5);
+}

@@ -1,0 +1,30 @@
+<h1 class="text-center mb-4">To Do List Poggers</h1>
+<%= render 'layouts/task_form'  %>
+
+<ul id="tabs">
+  <% i = 1 %>
+  <% @categories.each do  |category|%>
+    <li><a href="#tab<%= i %>"><%= category.title  %></a></li>
+    <% i += 1%>
+  <% end %>
+</ul>
+<div id="content" style="height:154px;">
+  <ul>
+  <% i = 1 %>
+  <% @categories.each do  |category|%>
+    <div id="tab<%= i %>">
+      <% category.tasks.each do |task|  %>
+      <li>
+        <%= task.title  %>
+        <% unless task.deadline.nil? %>
+          , to read: <%= task.deadline.strftime('%D')  %>
+        <% end %>
+      </li>
+      <% end %>
+    </div>
+  <% i += 1%>
+  <% end %>
+  </ul>
+</div>
+<%= render 'layouts/carousel' %>
+

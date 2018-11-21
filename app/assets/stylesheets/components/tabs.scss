@@ -1,0 +1,70 @@
+#tabs {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font:12px Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+#tabs li {
+  float: left;
+  margin: 0 10px 0 0;
+}
+#tabs a {
+  position: relative;
+  background: transparent;
+  padding: 0.7em 3em;
+  float: left;
+  text-decoration: none;
+  color: rgb(10, 112, 196);
+  font-size: 13px;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+}
+#tabs a:hover, #tabs a:hover::after, #tabs a:focus, #tabs a:focus::after {
+  background: #5aaed4;
+  color: #000;
+}
+#tabs a:focus {
+  outline: 0;
+}
+#tabs a::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: -.5em;
+  bottom: 0;
+  width: 1em;
+  background: transparent;
+  border-top-right-radius: 10px;
+}
+#tabs #current a {
+  background: #399ecd;
+  z-index: 3;
+  color: #fff;
+}
+#tabs #current a::after {
+  background: #399ecd;
+  z-index: 3;
+  color: #fff;
+}
+#content {
+  background: #fff;
+  padding: 0px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin:5px 50px 10px 50px;
+  box-shadow: 3px 5px 10px 2px #22779e;
+  border-radius: 30px;
+}
+#content ul{width: 100%}
+
+#content li {
+  list-style-type: none;
+}
