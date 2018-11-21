@@ -22,12 +22,13 @@
 .img-circle {
   padding: 0px;
   margin: 0px;
+  border-radius: 50%;
   box-shadow: 0 0 16px 3px #d5d9f6;
 }
 .img-arrow {
-  height: 25%;
+  height: 50%;
   width : 10%;
-  box-shadow: 0 0 5px rgb(255, 255, 255);
+  box-shadow: 0 0 5px rgb(199, 236, 236);
 }
 #btn-previous {
   border-top-right-radius: 10px;
@@ -45,7 +46,7 @@
 }
 .carousel-container {
   border-radius: 20px;
-  background: rgb(90, 89, 89);
+  background: white;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
